@@ -1,0 +1,166 @@
+*{
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(images/background2.jpg);
+    background-repeat: none;
+    background-position: center;
+    background-size: cover;
+    overflow: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0%;
+    padding: 0;
+    
+}
+.top{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact{
+    display: infinite-block;
+    padding:8px 20px;
+    position: relative;
+    color: white;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.contact a h3::after {
+    content: '';
+    width: 0%;
+    height: 5px;
+    background: #bedcfe;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.contact a h3:hover::after {
+    width: 100%;
+}
+.contact a{
+    color: white;
+    text-decoration: none;
+}
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid rgb(45, 86, 95);
+    background: rgb(45, 86, 95);
+    transition: 1.5s;
+}
+.wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 90%;
+    width: 90%; 
+}
+
+.ending{
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+    text-align: center;
+    font-family: calibri;
+    margin-bottom: 2;
+    border: 1px solid white;
+    border-radius: 2px;
+    padding: 1%;
+    width: 15%;
+    margin: 3%;
+}
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col {
+    flex-basis: 31%;
+    background: #e6eaf1;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12 px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.course-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width:700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+.campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+.campus-col {
+    flex-basis: 32%;
+    border: 1px solid white;
+    border-radius: 10%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img {
+    width: 100%;
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background:rgba(230, 232, 255, 0.5);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.75s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.layer h3 a{
+    color: white;
+    text-decoration: none;
+}
